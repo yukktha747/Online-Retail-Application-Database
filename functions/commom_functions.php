@@ -1,6 +1,13 @@
 <style>
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 6px 5px blue;
+
+}
 .card-img-top{
-  object-fit:contain;
+  object-fit:cover;
 }
 </style>
 <?php
@@ -71,7 +78,7 @@ function get_unique_brands(){
   $result_query=mysqli_query($con,$select_query);
   $num_of_rows=mysqli_num_rows($result_query);
   if($num_of_rows==0){
-    echo"<h2 class='text-center'>No stock for this category</h2>";
+    echo"<h2><center>No stock<center></h2>";
   }
 while($row=mysqli_fetch_assoc($result_query)){
 $product_id=$row['product_id'];
@@ -106,7 +113,7 @@ function get_unique_categories(){
   $result_query=mysqli_query($con,$select_query);
   $num_of_rows=mysqli_num_rows($result_query);
   if($num_of_rows==0){
-    echo"<h2>No stock for this category</h2>";
+    echo"<h2><center>No stock</center></h2>";
   }
 while($row=mysqli_fetch_assoc($result_query)){
 $product_id=$row['product_id'];
@@ -248,4 +255,5 @@ function get_order_details(){
     }
   }
 }
+
 

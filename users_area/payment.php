@@ -34,6 +34,7 @@
                 <a href="https://www.paypal.com" target="_blank"><img src="../images/download.jpg" alt=""></a>
             </div>
             <div class="col-md-6">
-                <a href="order.php?user_id=<?php echo $user_id ?>"><h2 class="text-center">Pay offline</h2></a>
+                <a href="index.php?user_id=<?php echo $user_id ?>"><h2 class="text-center">Pay Online</h2></a>
+                
 </body>
 </html>

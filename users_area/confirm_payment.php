@@ -48,9 +48,6 @@ $result_2=mysqli_query($con,$update_orders);
         <div class="form-outline my-4 text-center w-50 m-auto">
           <select name="payment_mode" class="form-select w-50 m-auto">
             <option>Select payment mode</option>
-            <option>UPI</option>
-            <option>Netbanking</option>
-            <option>Paypal</option>
             <option>Cash on delivery</option>
             <option>Pay offline</option>
          </select>

@@ -13,8 +13,29 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+      .back{
+      background-image: url(image1.avif);
+    background-repeat: repeat;
+    width:100%;
+    animation:img_anim 50s linear infinite;
+    }
+    @keyframes img_anim{
+    0%{
+      background-position:0 0;
+
+    }
+    100%{
+      background-position:-2122px 0;
+    }
+  }
+  .a,.b{
+    color:white;
+    font-weight: bold;
+  }
+    </style>
 </head>
-<body>
+<body class="back">
 <nav class="navbar navbar-expand-lg bg-info">
     
   <div class="container-fluid p-0">
@@ -76,8 +97,8 @@ session_start();
    ?>
 </ul>
 </nav>
-<div class="bg-light">
-    <h3 class="a">Hidden store</h3>
+<div class="back">
+    <h3 class="a">Trends store</h3>
     <p class="b">Communication is the heart of retail and community</p>
 </div> 
 <div class="row px-1">

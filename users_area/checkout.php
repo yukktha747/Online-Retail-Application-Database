@@ -26,9 +26,24 @@
   width:3%;
   height:3%;
 }
+.back{
+      background-image: url(image1.avif);
+    background-repeat: repeat;
+    width:100%;
+    animation:img_anim 50s linear infinite;
+    }
+    @keyframes img_anim{
+    0%{
+      background-position:0 0;
+
+    }
+    100%{
+      background-position:-2122px 0;
+    }
+  }
 </style>
 </head>
-<body>
+<body class="back">
 <nav class="navbar navbar-expand-lg bg-info">
     
   <div class="container-fluid p-0">

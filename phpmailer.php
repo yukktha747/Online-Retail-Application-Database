@@ -11,7 +11,7 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->isSMTP();
-    $mail->Host       = '587.yus21cs@cmrit.ac.in';
+    $mail->Host       = '587.';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'your_email@example.com';
     $mail->Password   = 'yukktha@01';

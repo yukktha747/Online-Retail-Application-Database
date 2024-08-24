@@ -42,6 +42,7 @@
                     <button><a href="insert_product.php"  class="btn btn-group bg-info text-dark my-1">Insert products</a></button>
                     <button><a href="admin.php?insert_category"  class="btn btn-group  bg-info text-dark my-1">Insert categories</a></button>
                     <button><a href="admin.php?insert_brands"  class="btn btn-group  bg-info text-dark my-1">Insert brands</a></button>
+                    <button><a href="./admin area/retail.php"  class="btn btn-group  bg-info text-dark my-1">Home</a></button>
                     <button><a href="../users_area/users_logout.php"  class="btn btn-group  bg-info text-dark my-1">Logout</a></button>
                     </div>
 </div>

@@ -26,9 +26,23 @@ margin:auto;
 display:block;
 object-fit: contain;
     }
+    .back{
+      background-image: url(image1.avif);
+    background-repeat: repeat;
+    width:100%;
+    animation:img_anim 50s linear infinite;
+    }
+    @keyframes img_anim{
+    0%{
+      background-position:0 0;
 
+    }
+    100%{
+      background-position:-2122px 0;
+    }
+  }
 </style>
-<body>
+<body class="back">
 <nav class="navbar navbar-expand-lg bg-info">
     
   <div class="container-fluid p-0">
@@ -91,7 +105,7 @@ object-fit: contain;
 </ul>
 </nav>
 <div class="bg-light text-center">
-    <h3 class="a">Hidden store</h3>
+    <h3 class="a">Trends store</h3>
     <p class="b">Communication is the heart of retail and community</p>
 </div> 
 <div class="row">

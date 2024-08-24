@@ -9,8 +9,6 @@ if(isset($_POST['insert_brands'])){
     echo "<script>alert('This brand is present in the database')</script>";
   }
   else{
-
-  
   $insert_query="insert into brand (Brand_title) values ('$brand_title')";
   $result=mysqli_query($con,$insert_query);
   if($result){

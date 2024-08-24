@@ -103,3 +103,41 @@ else{
 }
   }
 ?>
+<?php
+
+function sendOrderConfirmationEmail($userEmail, $orderDetails) {
+    // Email details
+    $to = $userEmail;
+    $subject = "Order Confirmation";
+    
+    // Compose the email message
+    $message = "Thank you for your order!\n\n";
+    $message .= "Order Details:\n";
+    $message .= $orderDetails;
+    
+    // Additional headers
+    $headers = "From: yourstore@example.com\r\n";
+    $headers .= "Reply-To: support@example.com\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+    
+    // Send the email
+    if (mail($to, $subject, $message, $headers)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage
+$userEmail = "customer@example.com";
+$orderDetails = "Item 1: Product A - $19.99\n";
+$orderDetails .= "Item 2: Product B - $29.99\n";
+$orderDetails .= "Total: $49.98";
+
+if (sendOrderConfirmationEmail($userEmail, $orderDetails)) {
+    echo "Order confirmation email sent successfully.";
+} else {
+    echo "Failed to send order confirmation email.";
+}
+
+?>

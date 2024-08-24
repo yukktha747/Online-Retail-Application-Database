@@ -29,9 +29,28 @@ session_start();
 .cart-img{
     object-fit:contain;
 }
+.back{
+      background-image: url(image1.avif);
+    background-repeat: repeat;
+    width:100%;
+    animation:img_anim 50s linear infinite;
+    }
+    @keyframes img_anim{
+    0%{
+      background-position:0 0;
+
+    }
+    100%{
+      background-position:-2122px 0;
+    }
+  }
+  .a,.b{
+    color:white;
+  }
+ 
 </style>
 </head>
-<body>
+<body class="back">
 <nav class="navbar navbar-expand-lg bg-info">
     
   <div class="container-fluid p-0">
@@ -90,14 +109,14 @@ session_start();
    ?>
 </ul>
 </nav>
-<div class="bg-light">
-    <h3 class="a">Hidden store</h3>
+<div class="back">
+    <h3 class="a">Trends store</h3>
     <p class="b">Communication is the heart of retail and community</p>
 </div> 
 <div class="container">
 <div class="row">
   <form action="" method="post">
-<table class="table table-bordered text-center">
+<table class="table table-bordered border:3 text-center">
 <?php
       global $con;
       $ip= getIPAddress();
